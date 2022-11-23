@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <title>SMhm</title>
+    <style>
+        .f-1 {
+            flex: 1;
+        }
+
+        .f-sy {
+            display: flex;
+            justify-content: flex-start;
+            align-items: stretch;
+            flex-direction: column;
+        }
+
+        .f-sf {
+            display: flex;
+            justify-content: flex-start;
+            align-items: stretch;
+        }
+
+        .giraffe {
+            display: block;
+            background-color: goldenrod;
+            width: 100%;
+            height: 2000px;
+        }
+
+        .giant {
+            display: block;
+            background-color: chocolate;
+            width: 2000px;
+            height: 2000px;
+        }
+
+        .scrollbar {
+            overflow: auto;
+        }
+
+        .scrollbar::-webkit-scrollbar {
+            width: 0.5rem;
+            height: 0.5rem;
+        }
+
+        .scrollbar::-webkit-scrollbar-track {
+            background: lightgray;
+        }
+
+        .scrollbar::-webkit-scrollbar-thumb {
+            background: gray;
+        }
+
+        .scrollbar::-webkit-scrollbar-thumb:hover {
+            background: #27a4bd;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg-info f-sf" style="height:100vh">
+        <section class="bg-success scrollbar" style="width: 48px;">
+            <div class="giraffe">
+                01
+            </div>
+        </section>
+        <main class="bg-danger f-1 f-sy scrollbar">
+            <header class="bg-warning" style="height:48px;">02</header>
+            <div class="bg-primary f-1 ">
+                <div class="giant">03</div>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>
